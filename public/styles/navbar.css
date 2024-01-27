@@ -1,0 +1,26 @@
+/* main.css */
+.navbar {
+    background: #25222250;
+    color: white;
+    padding: 10px 2rem;
+  }
+  
+  .navbar .container {
+    display: flex;
+    align-items: start;
+    
+  }
+  
+  
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 3rem;
+    font-family: 'Honk', system-ui;
+  }
+  
+  .navbar a:hover {
+    text-decoration: underline;
+  }
+  

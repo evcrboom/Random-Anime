@@ -1,0 +1,39 @@
+.site-footer {
+    background-color: #333; /* ตั้งค่าสีพื้นหลังของ footer */
+    color: white; /* ตั้งค่าสีข้อความของ footer */
+    padding: 20px; /* ให้ระยะห่างข้างใน footer */
+    text-align: center; /* จัดให้ข้อความอยู่ตรงกลาง */
+}
+
+.footer-content {
+    display: flex; /* ใช้ flexbox เพื่อจัดเรียงเนื้อหา */
+    justify-content: center; /* กระจายเนื้อหาในแนวนอน */
+    align-items: center; /* จัดกลางเนื้อหาในแนวตั้ง */
+    list-style: none; /* ลบจุดที่ปรากฏในรายการ list */
+    padding: 0; /* ลบระยะห่างข้างในของ list */
+    gap: 40px;
+}
+
+.footer-content ul {
+    display: flex; /* ทำให้รายการลิงก์เป็นแนวนอน */
+    padding: 0; /* ลบระยะห่างข้างในของ list */
+    margin: 0; /* ลบระยะห่างรอบนอกของ list */
+    list-style: none;
+}
+
+.footer-content li {
+    margin-right: 10px; /* กำหนดระยะห่างระหว่างลิงก์ */
+}
+
+.footer-content li:last-child {
+    margin-right: 0; /* ไม่ให้มีระยะห่างระหว่างลิงก์สุดท้ายกับขอบขวา */
+}
+
+.footer-content a {
+    color: white; /* ตั้งค่าสีข้อความของลิงก์ */
+    text-decoration: none; /* ลบเส้นใต้ข้อความของลิงก์ */
+}
+
+.footer-content a:hover {
+    text-decoration: underline; /* เพิ่มเส้นใต้ข้อความเมื่อเมาส์โฮเวอร์ */
+}

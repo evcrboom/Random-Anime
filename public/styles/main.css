@@ -1,0 +1,96 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: url(https://images.alphacoders.com/605/605592.png);
+    background-position: center center;
+     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.container {
+    flex: 1; /* ทำให้ .container ยืดเต็มความสูงที่เหลือ */
+    display: flex;
+    flex-direction: column; /* ทำให้เนื้อหาภายใน .container จัดเรียงตามแนวตั้ง */
+    justify-content: center; /* จัดกลางแนวตั้ง */
+    align-items: center; /* จัดกลางแนวนอน */
+    width: 100%;
+    margin: auto; /* ปรับเป็น auto เพื่อจัดกลางในทุกๆ ด้าน */
+    overflow: auto;
+}
+
+/* ส่วนอื่นๆ ของ CSS ที่ไม่ได้มีการเปลี่ยนแปลง */
+
+.layout {
+    max-height: 70vh; /* หรือค่าขนาดสูงสุดที่เหมาะสม */
+ 
+    /* คุณสมบัติอื่นๆ ที่เหลือไม่เปลี่ยนแปลง */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-family: 'Honk', system-ui;
+    font-size: 3rem;
+}
+.for-picture {
+    display: flex;
+    justify-content: center;
+}
+
+.for-picture img {
+    display: block;
+    width: auto;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.for-name h2 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: white;
+    font-size: 3.5rem;
+    text-align: center;
+   
+}
+
+.stordydetail p {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.random-button {
+    display: block;
+    width: 50%;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #5c5ced;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.random-button:hover {
+    background-color: #4848b3;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+}
+
+
+
+

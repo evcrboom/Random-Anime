@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RanDime</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <%- include("partials/navbar.ejs")%>
+    <div class="container" id="div1">
+        <h1>Welcome To RanDime</h1>       
+    <div class="layout">
+        <form id="form-post" method="post">
+        <div class="for-picture">
+            <img src="<%= dataPic%>" alt="img-poster">
+        </div>
+        <div class="for-name">          
+        <h2 class="headerName"><%= dataName%></h2>        
+        </div>
+        <div class="stordydetail">
+        <p class="storyDetail"><%= dataStory%></p>
+        </div>
+        <button class="random-button" type="submit" formaction="/random">Random</button>
+    </form>
+    </div>
+    </div>
+    <%- include("partials/footer.ejs")%>
+</body>
+</html>
